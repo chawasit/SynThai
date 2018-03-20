@@ -11,7 +11,7 @@ import string
 import numpy as np
 from keras.utils.np_utils import to_categorical
 
-import constant
+from . import constant
 
 class Text(object):
     def __init__(self, path, filename, content):

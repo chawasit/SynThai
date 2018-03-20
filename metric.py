@@ -7,7 +7,7 @@ from collections import OrderedDict
 import numpy as np
 from sklearn import metrics
 
-import constant
+from . import constant
 
 def custom_metric(y_true, y_pred, gen_cm=False):
     """Calculate score with custom metric"""

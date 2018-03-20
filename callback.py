@@ -9,7 +9,7 @@ import numpy as np
 from keras.callbacks import Callback, EarlyStopping, ModelCheckpoint, \
                             TensorBoard, CSVLogger
 
-from metric import custom_metric
+from .metric import custom_metric
 
 class CalcScore(Callback):
     """Calculate score on custom metric with Keras callback"""
