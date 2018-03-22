@@ -38,7 +38,7 @@ class Corpus(object):
         """Text preprocessing"""
 
         # Remove new line
-        content = re.sub(r"(\r\n|\r|\n)+", r"", content)
+        content = re.sub(r"(\r\n|\r|\n)+", r" ", content)
 
         # Convert one or multiple non-breaking space to space
         content = re.sub(r"(\xa0)+", r"\s", content)
