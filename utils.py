@@ -41,10 +41,10 @@ class Corpus(object):
         content = re.sub(r"(\r\n|\r|\n)+", r" ", content)
 
         # Convert one or multiple non-breaking space to space
-        content = re.sub(r"(\xa0)+", r"\s", content)
+        content = re.sub(r"(\xa0)+", r" ", content)
 
         # Convert multiple spaces to only one space
-        content = re.sub(r"\s{2,}", r"\s", content)
+        content = re.sub(r" {2,}", r" ", content)
 
         # Trim whitespace from starting and ending of text
         content = content.strip(string.whitespace)
